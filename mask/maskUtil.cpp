@@ -20,4 +20,3 @@ void info(){
     err << "\nATTENTION!!\nOnly included images will be processed for now"  << endl;
     err << "\nExpected usage will be mask <image> <scribble>" << endl;
 }*/
-}
