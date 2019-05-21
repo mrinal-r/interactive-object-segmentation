@@ -1,3 +1,0 @@
-/Users/mrinalrawool/CLionProjects/Image-Processing-Local/mask/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mrinalrawool/CLionProjects/Image-Processing-Local/mask/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mrinalrawool/CLionProjects/Image-Processing-Local/mask/cmake-build-debug/CMakeFiles/mask.dir
