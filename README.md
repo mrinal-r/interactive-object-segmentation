@@ -6,12 +6,12 @@ Sample images used from [DAVIS Interactive Challenge 2019](https://davischalleng
 ### To run
 Clone the repository
 
-'''
+```
 cd source/build
 cmake ..
 make
 ./mask
-'''
+```
 
 ### Sample run
 ##### Sample Input
