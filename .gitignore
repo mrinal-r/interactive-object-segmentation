@@ -33,6 +33,5 @@
 
 .idea
 .DS_Store
-/source/build/*
 cmake-build-debug
 CMakeFiles
