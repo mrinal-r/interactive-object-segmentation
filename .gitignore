@@ -34,5 +34,5 @@
 .idea
 .DS_Store
 .DS_Store?
-build/*
-/cmake-build-debug
+/mask/build/*
+/mask/cmake-build-debug
