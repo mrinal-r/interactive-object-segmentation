@@ -18,11 +18,19 @@ make
 
 ### Sample run
 ##### Sample Input
+![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/00038.jpg "Input Image")
+
+##### Scribble Mask indicating Object of Interest
+![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/blackswan_38.png "Scribble Masks")
+
+##### Binary Image of Superpixel boundaries
+![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/label_mask.jpg "Labels")
 
 ##### Superpixels
+![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/segmented.jpg "Superpixels")
 
 ##### Segmented Mask
-
+![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/masked.jpg "Mask")
 
 This project was implemented for academic purposes. Please follow this link for the project report
 
