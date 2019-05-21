@@ -32,5 +32,7 @@ make
 ##### Segmented Mask
 ![alt text](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/sample/masked.jpg "Mask")
 
-This project was implemented for academic purposes. Please follow this link for the project report
+This project was implemented for academic purposes. Please refer the [project report](https://github.com/mrinal-r/interactive-object-segmentation/blob/master/project-report.pdf "Project Report") to know details about the implementation.
+
+
 
