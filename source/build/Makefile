@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source
+CMAKE_SOURCE_DIR = /Users/mrinalrawool/Documents/Git/interactive-object-segmentation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source/build
+CMAKE_BINARY_DIR = /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source/build/CMakeFiles /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source/build/CMakeFiles 0
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build/CMakeFiles /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/source/build/CMakeFiles/progress.marks
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f CMakeFiles/Makefile2 ../source/build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f CMakeFiles/Makefile2 ../source/build/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,30 +97,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f CMakeFiles/Makefile2 ../source/build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f CMakeFiles/Makefile2 ../source/build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named mask
+# Convenience name for target.
+../source/build/CMakeFiles/mask.dir/rule:
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f CMakeFiles/Makefile2 ../source/build/CMakeFiles/mask.dir/rule
+.PHONY : ../source/build/CMakeFiles/mask.dir/rule
 
-# Build rule for target.
-mask: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mask
+# Convenience name for target.
+mask: ../source/build/CMakeFiles/mask.dir/rule
+
 .PHONY : mask
 
 # fast build rule for target.
 mask/fast:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/build
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/build
 .PHONY : mask/fast
 
 main.o: main.cpp.o
@@ -129,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/main.cpp.o
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/main.cpp.i
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/main.cpp.s
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 maskUtil.o: maskUtil.cpp.o
@@ -156,7 +158,7 @@ maskUtil.o: maskUtil.cpp.o
 
 # target to build an object file
 maskUtil.cpp.o:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/maskUtil.cpp.o
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/maskUtil.cpp.o
 .PHONY : maskUtil.cpp.o
 
 maskUtil.i: maskUtil.cpp.i
@@ -165,7 +167,7 @@ maskUtil.i: maskUtil.cpp.i
 
 # target to preprocess a source file
 maskUtil.cpp.i:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/maskUtil.cpp.i
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/maskUtil.cpp.i
 .PHONY : maskUtil.cpp.i
 
 maskUtil.s: maskUtil.cpp.s
@@ -174,7 +176,7 @@ maskUtil.s: maskUtil.cpp.s
 
 # target to generate assembly for a file
 maskUtil.cpp.s:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/maskUtil.cpp.s
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/maskUtil.cpp.s
 .PHONY : maskUtil.cpp.s
 
 processImage.o: processImage.cpp.o
@@ -183,7 +185,7 @@ processImage.o: processImage.cpp.o
 
 # target to build an object file
 processImage.cpp.o:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/processImage.cpp.o
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/processImage.cpp.o
 .PHONY : processImage.cpp.o
 
 processImage.i: processImage.cpp.i
@@ -192,7 +194,7 @@ processImage.i: processImage.cpp.i
 
 # target to preprocess a source file
 processImage.cpp.i:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/processImage.cpp.i
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/processImage.cpp.i
 .PHONY : processImage.cpp.i
 
 processImage.s: processImage.cpp.s
@@ -201,7 +203,7 @@ processImage.s: processImage.cpp.s
 
 # target to generate assembly for a file
 processImage.cpp.s:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/processImage.cpp.s
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/processImage.cpp.s
 .PHONY : processImage.cpp.s
 
 segmentFrame.o: segmentFrame.cpp.o
@@ -210,7 +212,7 @@ segmentFrame.o: segmentFrame.cpp.o
 
 # target to build an object file
 segmentFrame.cpp.o:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/segmentFrame.cpp.o
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/segmentFrame.cpp.o
 .PHONY : segmentFrame.cpp.o
 
 segmentFrame.i: segmentFrame.cpp.i
@@ -219,7 +221,7 @@ segmentFrame.i: segmentFrame.cpp.i
 
 # target to preprocess a source file
 segmentFrame.cpp.i:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/segmentFrame.cpp.i
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/segmentFrame.cpp.i
 .PHONY : segmentFrame.cpp.i
 
 segmentFrame.s: segmentFrame.cpp.s
@@ -228,7 +230,7 @@ segmentFrame.s: segmentFrame.cpp.s
 
 # target to generate assembly for a file
 segmentFrame.cpp.s:
-	$(MAKE) -f CMakeFiles/mask.dir/build.make CMakeFiles/mask.dir/segmentFrame.cpp.s
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(MAKE) -f ../source/build/CMakeFiles/mask.dir/build.make ../source/build/CMakeFiles/mask.dir/segmentFrame.cpp.s
 .PHONY : segmentFrame.cpp.s
 
 # Help Target
@@ -263,6 +265,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mrinalrawool/Documents/Git/interactive-object-segmentation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
